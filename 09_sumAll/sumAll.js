@@ -2,9 +2,8 @@ const sumAll = function(a, b) {
     let sum = 0;
     if (!Number.isInteger(a) || !Number.isInteger(b)
         || a < 0 || b < 0
-    )   
-    return 'ERROR';
-
+    )
+        return 'ERROR';
 
     if (a > b) {
         let temp = a;
@@ -12,7 +11,7 @@ const sumAll = function(a, b) {
         b = temp;
     }
 
-    for(; a <= b; a++){
+    for (; a <= b; a++) {
         sum += a;
     }
     return sum;
